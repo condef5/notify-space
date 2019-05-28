@@ -8,7 +8,7 @@
   "unpkg": "dist/index.umd.js",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "repository": "git@github.com:condef5/notify-space.git",
@@ -16,11 +16,41 @@
     "notify",
     "space"
   ],
-  "author": "condef5 <frank.condezo@gmail.com>",
+  "author": "condef5 <davis.con.fab@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
-    "microbundle": "^0.11.0"
-  }
+    "lint-staged": "^8.1.7",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.17.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "index.js.flow",
+    "package.json",
+    "README.md"
+  ]
 }
