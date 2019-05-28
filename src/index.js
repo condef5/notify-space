@@ -76,7 +76,7 @@ function notifySpace({ text, duration = 2000, theme = 'white' }) {
 
   $area.appendChild($notify);
   setTimeout(() => {
-    notify.classList.add('down');
+    $notify.classList.add('down');
     setTimeout(() => {
       $area.removeChild($notify);
     }, 500);

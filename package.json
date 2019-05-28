@@ -1,6 +1,6 @@
 {
   "name": "notify-space",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show notifications",
   "source": "src/index.js",
   "main": "dist/index.js",
