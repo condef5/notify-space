@@ -26,12 +26,12 @@ $style.innerHTML = `
   padding: 0px 20px;
 }
 
-.white {
+.light {
   background: white;
   color: black;
 }
 
-.black {
+.dark {
   background-color: black;
   color: #fff;
 }
@@ -73,7 +73,7 @@ document.body.appendChild($style);
 export default function notifySpace({
   text,
   duration = 2000,
-  theme = 'white'
+  theme = 'light'
 }: {
   text: string;
   duration?: number;

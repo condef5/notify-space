@@ -26,12 +26,12 @@ $style.innerHTML = `
   padding: 0px 20px;
 }
 
-.white {
+.light {
   background: white;
   color: black;
 }
 
-.black {
+.dark {
   background-color: black;
   color: #fff;
 }
@@ -69,7 +69,7 @@ $style.innerHTML = `
 `;
 document.body.appendChild($style);
 
-function notifySpace({ text, duration = 2000, theme = 'white' }) {
+function notifySpace({ text, duration = 2000, theme = 'light' }) {
   const $notify = document.createElement('div');
   $notify.classList.add('notify', theme, 'up');
   $notify.innerText = text;

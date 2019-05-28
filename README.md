@@ -24,7 +24,7 @@ import notify from 'notify-space'
 notify({
   text: "See you space cowboy ...",  // Message to be displayed
   duration: 4000. // Notificacion duration, it's optional, by default is `2000`
-  theme: 'black'. // Theme available => ['white', 'dark', 'success'], by default is `white`
+  theme: 'dark'. // Theme available => ['light', 'dark', 'success'], by default is `white`
 })
 
 ```
