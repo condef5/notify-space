@@ -1,0 +1,26 @@
+{
+  "name": "notify-space",
+  "version": "1.0.0",
+  "description": "Show notifications",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "repository": "git@github.com:condef5/notify-space.git",
+  "keywords": [
+    "notify",
+    "space"
+  ],
+  "author": "condef5 <frank.condezo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "microbundle": "^0.11.0"
+  }
+}
