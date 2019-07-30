@@ -96,4 +96,4 @@ function notifySpace(props) {
   }, duration);
 }
 
-module.exports = notifySpace;
+export default notifySpace;
