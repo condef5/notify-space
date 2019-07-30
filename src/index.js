@@ -23,7 +23,7 @@ $style.innerHTML = `
   box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),
     0px 6px 10px 0px rgba(0,0,0,0.14), 
     0px 1px 18px 0px rgba(0,0,0,0.12);
-  padding: 14px 16px;
+  padding: 14px 20px;
   min-width: 70px;
   max-width: 350px;
   letter-spacing: 0.01071em;
@@ -38,7 +38,7 @@ $style.innerHTML = `
 }
 
 .dark {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgb(50, 50, 50);
   color: #fff;
 }
 
